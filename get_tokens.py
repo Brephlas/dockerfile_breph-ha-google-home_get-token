@@ -21,7 +21,7 @@ try:
 
     if not PASSWORD:
         while not PASSWORD:
-            PASSWORD = input("What is the password or app password? ").strip()
+            PASSWORD = input("What is the password or app password? ").replace(" ", "")
             if not PASSWORD:
                 print("The password must be provided!\n")
 except EOFError:
